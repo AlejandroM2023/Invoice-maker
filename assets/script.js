@@ -1,9 +1,3 @@
-// Retrieve tasks and nextId from localStorage
-let taskList = JSON.parse(localStorage.getItem("tasks"));
-let nextId = JSON.parse(localStorage.getItem("nextId"));
-
-
-
 // Todo: create a function to generate a unique task id
 function generateTaskId() {
     let id = '';
@@ -221,26 +215,20 @@ function handleDrop(event, ui) {
 
 }
 
+function loadDate(){
+    const date = dayjs().format('MM/DD/YYYY');
+    return date;
+}
+
 
 
 
 
 // Todo: when the page loads, render the task list, add event listeners, make lanes droppable, and make the due date field a date picker
 $(document).ready(function () {
-    //check if our localStorage pull was null
-    if(taskList == null){
-        taskList = [];
-    }
-    if(nextId == null){
-        nextId = [];
-    }
-
     
-    //render the existing tasks
-    renderTaskList();
-
     //set date box
-    $( "#datepicker" ).datepicker();
+    $( 'h2' ).text(loadDate());
 
 
     //add dragable funtionality and order save

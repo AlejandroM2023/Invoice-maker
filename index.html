@@ -11,19 +11,20 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
   <title>Task Board</title>
 </head>
 
 <body>
   <header class="row p-4 mb-4 text-center border-bottom border-5">
-    <div class="col-12 col-md-6 text-center mb-5">
+    <div class="col text-center mb-5 ">
       <p class="my-0">J&J</p>
       <p class="my-0">Juan A Rodriguez -U</p>
-      <p class="my-0">J&J</p>
+      <p class="my-0">(512)-774-1293</p>
+      <p class="my-0">25juana.rodriguez@gmail.com</p>
     </div>
-    <div class="col-12 col-md-6 text-center mb-5">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
+    <div class="col text-center mb-5 ">
+      <button class="btn btn-success" id="addClient" data-bs-toggle="modal" data-bs-target="#formModal">agregar cliente</button>
     </div>
      
   </header>
@@ -70,26 +71,21 @@
   
   <!-------------------------------------------------------------->
   <main>
-  <div class="row p-4 mb-4 justify-content-center">
+  <div class="d-print-none row p-4 mb-4 justify-content-center">
     <form>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <label for="material" class="form-label">Trabajo / Material</label>
+        <input type="text" class="form-control" id="material" aria-describedby="meterial or job">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="cost" class="form-label">Costo</label>
+        <input type="text" class="form-control" id="cost">
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button id="addRow" class="btn btn-primary">Agregar</button>
     </form>
   </div>
-  <div class="row p-4 mb-4 justify-content-center">
-    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
+  <div class="row p-4 mb-4 text-center">
+    <h2>date</h2>
   </div>
   <div class="row text-center border-bottom border-5">
     <table class=" table table-striped">
@@ -109,10 +105,12 @@
 
   <footer class="row p-4 mb-4 text-center ">
     <div class="col text-center mb-5">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
+      <p class="mt-5">_______________________________________</p>
+      <p>Juan Rodriguez</p>
     </div>
-    <div class="col ext-center mb-5">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
+    <div class="col text-center mb-5">
+      <p class="mt-5">_______________________________________</p>
+      <p class="m">Print Client Name:</p>
     </div>
      
   </footer>
@@ -127,7 +125,7 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
-  <script src="./Assets/js/script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>
