@@ -19,9 +19,9 @@
   <header class="row p-4 mb-4 text-center border-bottom border-5">
     <div class="col text-center mb-5 ">
       <p class="my-0">J&J</p>
-      <p class="my-0">Juan A Rodriguez -U</p>
+      <p class="my-0">Alejandro Meza zurita</p>
       <p class="my-0">(512)-774-1293</p>
-      <p class="my-0">25juana.rodriguez@gmail.com</p>
+      <p class="my-0">25Alejandro.Meza>@gmail.com</p>
     </div>
     <div class="col text-center mb-5 ">
       <button class="btn btn-success" id="addClient" data-bs-toggle="modal" data-bs-target="#formModal">agregar cliente</button>
@@ -75,10 +75,14 @@
     <form>
       <div class="mb-3">
         <label for="material" class="form-label">Trabajo / Material</label>
-        <input type="text" class="form-control" id="material" aria-describedby="meterial or job">
+        <input type="text" class="form-control" id="service" aria-describedby="meterial or job">
       </div>
       <div class="mb-3">
-        <label for="cost" class="form-label">Costo</label>
+        <label for="part" class="form-label">parte</label>
+        <input type="text" class="form-control" id="part">
+      </div>
+      <div class="mb-3">
+        <label for="Labor" class="form-label">Costo</label>
         <input type="text" class="form-control" id="cost">
       </div>
       <button id="addRow" class="btn btn-primary">Agregar</button>
@@ -87,26 +91,26 @@
   <div class="row p-4 mb-4 text-center">
     <h2>date</h2>
   </div>
-  <div class="row text-center border-bottom border-5">
-    <table class=" table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Item</th>
-          <th scope="col">Cost</th>
-        </tr>
-      </thead>
-      <tbody>
-
-        
-
-      </tbody>
-    </table>
-  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Service</th>
+        <th scope="col">part</th>
+        <th scope="col">Labor</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      
+    </tbody>
+  </table>
+  <div id="partsTotal"></div>
+  <div id="laborTotal"></div>
 
   <footer class="row p-4 mb-4 text-center ">
     <div class="col text-center mb-5">
       <p class="mt-5">_______________________________________</p>
-      <p>Juan Rodriguez</p>
+      <p>Alejandro Meza</p>
     </div>
     <div class="col text-center mb-5">
       <p class="mt-5">_______________________________________</p>
